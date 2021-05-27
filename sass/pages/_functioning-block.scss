@@ -1,0 +1,34 @@
+.process {
+   width: 90%;
+   margin: auto;
+   box-sizing: content-box;
+   &__block {
+      background-color: $light-bg-color;
+      @include shadow-box;
+      height: 4rem;
+      text-align: center;
+      border-radius: 25px;
+      margin: 20px 0;
+      padding-left: 20px;
+      padding-top: 0.8rem;
+      font-weight: bold;
+      display: flex;
+      position: relative;
+      z-index: 1;
+   }
+   &__span {
+      background-color: $primary-color;
+      border-radius: 50%;
+      font-size: 0.9rem;
+      position: absolute;
+      left: -8px;
+      padding: 0.2rem 0.45rem;
+      color: #fff;
+   }
+   &__icon {
+      margin-left: 1rem;
+      margin-right: 1.5rem;
+      color: $icon-color;
+      font-size: 1.1rem;
+   }
+}

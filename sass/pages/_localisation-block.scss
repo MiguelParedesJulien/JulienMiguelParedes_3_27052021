@@ -1,0 +1,46 @@
+.localisation {
+   background-color: $light-bg-color;
+   text-align: center;
+   &__search {
+      background-color: $dark-bg-color;
+      padding: 15px 0;
+      margin-bottom: 15px;
+      box-shadow: inset 0px 4px darken($dark-bg-color, 5%);
+   }
+   &__input {
+      background-color: inherit;
+      border: none;
+      font-family: $body-font;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-left: 5px;
+   }
+   &__label {
+      padding: 1.5rem 0;
+      margin-left: 40px;
+      &__title {
+         width: 70%;
+         display: inline-block;
+         margin: auto;
+         margin-bottom: 10px;
+         margin-top: 30px;
+         font-size: 1.6rem;
+         font-weight: bold;
+      }
+      &__text {
+         padding-top: 1.5rem;
+         color: #717171;
+         display: inline-block;
+         width: 90%;
+         font-size: 1.1rem;
+         margin: auto;
+      }
+   }
+   &__button {
+      @include bouton;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-bottom: 50px;
+      margin-top: 30px;
+   }
+}

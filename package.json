@@ -1,0 +1,19 @@
+{
+   "name": "ohmyfood",
+   "version": "1.0.0",
+   "description": "Commande en ligne et livraison de repas à domicile ",
+   "main": "index.js",
+   "scripts": {
+      "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MiguelParedesJulien/JulienMiguelParedes_3_27052021.git"
+   },
+   "author": "Julien Miguel Paredes",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/MiguelParedesJulien/JulienMiguelParedes_3_27052021/issues"
+   },
+   "homepage": "https://github.com/MiguelParedesJulien/JulienMiguelParedes_3_27052021#readme"
+}
