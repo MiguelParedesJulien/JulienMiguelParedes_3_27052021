@@ -25,4 +25,11 @@
    &__icon {
       padding-right: 0.5rem;
    }
+   @media (min-width: 1024px) {
+      text-align: center;
+      &__title {
+         font-size: 2rem;
+         margin-bottom: 0;
+      }
+   }
 }

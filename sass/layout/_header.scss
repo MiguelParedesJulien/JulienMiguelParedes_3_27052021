@@ -2,5 +2,8 @@
    &__logo {
       text-align: center;
       padding: 20px;
+      @media (min-width: 1024px) {
+         text-align: start;
+      }
    }
 }

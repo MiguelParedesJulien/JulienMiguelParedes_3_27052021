@@ -43,4 +43,9 @@
       margin-bottom: 50px;
       margin-top: 30px;
    }
+   @media (min-width: 1024px) {
+      &__button {
+         margin-bottom: 20px;
+      }
+   }
 }

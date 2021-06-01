@@ -13,6 +13,11 @@ body {
   text-align: center;
   padding: 20px;
 }
+@media (min-width: 1024px) {
+  .header__logo {
+    text-align: start;
+  }
+}
 
 .footer {
   background-color: #353535;
@@ -41,6 +46,15 @@ body {
 }
 .footer__icon {
   padding-right: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .footer {
+    text-align: center;
+  }
+  .footer__title {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
 }
 
 .localisation {
@@ -102,11 +116,17 @@ body {
   opacity: 0.8;
   box-shadow: -2px -2px 2px 1px #eaeaea, 2px -2px 2px 1px #eaeaea, 2px 2px 2px 1px #eaeaea, -2px 2px 2px 1px #eaeaea;
 }
+@media (min-width: 1024px) {
+  .localisation__button {
+    margin-bottom: 20px;
+  }
+}
 
 .process {
   width: 90%;
   margin: auto;
   box-sizing: content-box;
+  padding-bottom: 2rem;
 }
 .process__block {
   background-color: #f6f6f6;
@@ -121,6 +141,15 @@ body {
   display: flex;
   position: relative;
   z-index: 1;
+  transition: all 0.2s;
+}
+.process__block:hover {
+  cursor: pointer;
+  background: #f2eafb;
+  box-shadow: -2px -2px 2px 1px #eaeaea, 2px -2px 2px 1px #eaeaea, 2px 2px 2px 1px #eaeaea, -2px 2px 2px 1px #eaeaea;
+}
+.process__block:hover .process__icon {
+  color: #9356dc;
 }
 .process__span {
   background-color: #9356dc;
@@ -137,6 +166,27 @@ body {
   color: #7e7e7e;
   font-size: 1.1rem;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .process {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .process {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .process h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .process__block {
+    width: 30%;
+    height: 55px;
+    padding-top: unset;
+  }
+}
 
 .restaurant {
   background-color: #f6f6f6;
@@ -150,6 +200,24 @@ body {
   width: 90%;
   margin: auto;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .restaurant {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+  }
+  .restaurant h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
 
 .rest-card {
   width: 90%;
@@ -158,6 +226,11 @@ body {
   margin: 20px auto;
   border-radius: 25px;
   box-shadow: -2px -2px 2px 0px #eaeaea, 2px -2px 2px 0px #eaeaea, 2px 2px 2px 0px #eaeaea, -2px 2px 2px 0px #eaeaea;
+  transition: all 0.2s;
+}
+.rest-card:hover {
+  transform: scale(1.01);
+  box-shadow: -2px -2px 2px 1px #eaeaea, 2px -2px 2px 1px #eaeaea, 2px 2px 2px 1px #eaeaea, -2px 2px 2px 1px #eaeaea;
 }
 .rest-card__top {
   position: relative;
@@ -186,7 +259,7 @@ body {
 }
 .rest-card__name__heart {
   position: absolute;
-  top: 0.3rem;
+  top: 0.6rem;
   right: 1rem;
   font-size: 1.4rem;
 }
@@ -197,6 +270,16 @@ body {
   margin-top: 0;
   margin-left: 0.5rem;
   font-size: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .rest-card {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .rest-card {
+    width: 22%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
