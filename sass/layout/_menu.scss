@@ -1,0 +1,118 @@
+.menu {
+   background-color: $light-bg-color;
+   border-radius: 30px 30px 0 0;
+   position: relative;
+   top: -30px;
+   padding: 10px 15px 80px 15px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   margin-bottom: -30px;
+   padding-bottom: 50px;
+   &__container {
+      width: 100%;
+   }
+   &__title {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 70px;
+      position: relative;
+      &__h1 {
+         position: absolute;
+         left: 1rem;
+         font-family: $logo-font;
+         font-weight: 100;
+      }
+      &__heart {
+         cursor: pointer;
+         position: absolute;
+         right: 1rem;
+         font-size: 1.4rem;
+         &--empty {
+            position: absolute;
+            right: 1rem;
+            top: 1.5rem;
+            color: black;
+            transition: all 0.5s;
+         }
+         &--full {
+            position: absolute;
+            right: 1rem;
+            top: 1.5rem;
+            opacity: 0;
+            transition: all 0.5s;
+            font-weight: bold;
+            background: linear-gradient(184deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+         }
+         &:hover {
+            & > .menu__title__heart--empty {
+               color: transparent;
+               opacity: 0;
+            }
+            & > .menu__title__heart--full {
+               opacity: 1;
+            }
+         }
+      }
+   }
+   &__block {
+      width: 100%;
+      margin-bottom: 35px;
+      &__h2 {
+         margin-bottom: 10px;
+         border-bottom: 4px solid $tertiary-color;
+         width: 45px;
+         font-weight: 100;
+      }
+      &__dish {
+         border-radius: 10px;
+         @include shadow-box;
+         margin-bottom: 15px;
+         width: 100%;
+         padding: 12px;
+         display: flex;
+         flex-direction: row;
+         overflow: hidden;
+         position: relative;
+         height: 75px;
+         background-color: #fff;
+         &__description {
+            position: relative;
+            width: 80%;
+            p,
+            h3 {
+               overflow: hidden;
+               text-overflow: ellipsis;
+               white-space: nowrap;
+               padding-bottom: 1px;
+            }
+         }
+         &__price {
+            padding-left: 8px;
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-end;
+         }
+         &__check {
+            width: 60px;
+            height: 100%;
+            margin-top: -12px;
+            background: $tertiary-color;
+            z-index: 1;
+            position: absolute;
+            right: -60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+      }
+   }
+}

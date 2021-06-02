@@ -1,7 +1,15 @@
 .header {
    &__logo {
       text-align: center;
-      padding: 20px;
+      padding: 10px;
+      margin-top: 10px;
+      &__arrow {
+         color: black;
+         float: left;
+         font-size: 1.2rem;
+         margin-top: 5px;
+         font-size: bold;
+      }
       @media (min-width: 1024px) {
          text-align: start;
       }

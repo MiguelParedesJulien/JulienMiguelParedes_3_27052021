@@ -2,8 +2,11 @@
 @import "./utils/mixins";
 @import "./base/base";
 @import "./base/typography";
+@import "./components/button";
+@import "./components/background";
 @import "./layout/header";
 @import "./layout/footer";
+@import "./layout/menu";
 @import "./pages/localisation-block";
 @import "./pages/functioning-block";
 @import "./pages/restaurant-block";

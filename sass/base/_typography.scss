@@ -1,3 +1,15 @@
 body {
    font-family: $body-font;
 }
+
+.menu__block__dish h3 {
+   font-weight: bold;
+   margin-bottom: 5px;
+   font-size: 1.2rem;
+   margin-top: 0;
+}
+
+.menu__block__dish p {
+   font-size: 0.9rem;
+   margin-top: 5px;
+}
