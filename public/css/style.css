@@ -80,11 +80,6 @@ body {
   margin-top: 5px;
   font-size: bold;
 }
-@media (min-width: 1024px) {
-  .header__logo {
-    text-align: start;
-  }
-}
 
 .footer {
   background-color: #353535;
