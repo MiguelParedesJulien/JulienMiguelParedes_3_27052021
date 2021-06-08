@@ -1,3 +1,13 @@
+@keyframes dish-delay {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 body {
   width: 100%;
   margin: 0;
@@ -186,9 +196,15 @@ body {
 }
 .menu__block__h2 {
   margin-bottom: 10px;
-  border-bottom: 4px solid #99e2d0;
-  width: 45px;
   font-weight: 100;
+}
+.menu__block__h2::after {
+  content: "";
+  height: 4px;
+  background: #99e2d0;
+  width: 45px;
+  display: block;
+  margin-top: 5px;
 }
 .menu__block__dish {
   border-radius: 10px;
@@ -202,6 +218,17 @@ body {
   position: relative;
   height: 75px;
   background-color: #fff;
+  animation: dish-delay 0.7s ease-in-out forwards;
+  opacity: 0;
+}
+.menu__block__dish:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.menu__block__dish:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.menu__block__dish:nth-child(4) {
+  animation-delay: 0.3s;
 }
 .menu__block__dish__description {
   position: relative;
@@ -234,6 +261,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  .menu__container {
+    display: flex;
+  }
+  .menu__block__dish {
+    width: 90%;
+  }
 }
 
 .localisation {
