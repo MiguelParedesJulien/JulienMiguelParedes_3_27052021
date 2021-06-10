@@ -16,7 +16,7 @@
 }
 
 @mixin shadow-box-hover {
-   box-shadow: -2px -2px 2px 1px $dark-bg-color, 2px -2px 2px 1px $dark-bg-color, 2px 2px 2px 1px $dark-bg-color, -2px 2px 2px 1px $dark-bg-color;
+   box-shadow: -2px -2px 2px 1px $shadow-hover-color, 2px -2px 2px 1px $shadow-hover-color, 2px 2px 2px 1px $shadow-hover-color, -2px 2px 2px 1px $shadow-hover-color;
 }
 
 @mixin shadow-box {

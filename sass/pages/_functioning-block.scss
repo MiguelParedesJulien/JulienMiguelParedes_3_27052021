@@ -18,6 +18,7 @@
       z-index: 1;
       transition: all 0.2s;
       &:hover {
+         opacity: 0.7;
          cursor: pointer;
          background: lighten($primary-color, 35%);
          @include shadow-box-hover;
