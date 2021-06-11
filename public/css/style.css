@@ -22,7 +22,7 @@
     transform: translateY(23px);
   }
   60% {
-    transform: translateY(-25px);
+    transform: translateY(-30px);
   }
   80% {
     transform: translateY(0);
@@ -42,22 +42,6 @@
   }
   100% {
     width: calc(70% - 30px);
-  }
-}
-@keyframes check-slide {
-  from {
-    right: -60px;
-  }
-  to {
-    right: 0px;
-  }
-}
-@keyframes price-slide {
-  from {
-    right: 15px;
-  }
-  to {
-    right: 75px;
   }
 }
 body {
@@ -144,13 +128,13 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader-disapear 1.2s ease forwards;
+  animation: loader-disapear 1.2s ease-in-out forwards;
   animation-delay: 2.2s;
 }
 
@@ -332,14 +316,14 @@ body {
   animation: description-hidden 1s ease-in-out forwards;
 }
 .menu__block__dish:hover > .menu__block__dish__check {
-  opacity: 0.7;
-  animation: check-slide 1s ease-in-out forwards;
+  opacity: 1;
+  right: 0px;
 }
 .menu__block__dish:hover .menu__block__dish__check i {
   animation: rotate 1s ease-in-out forwards;
 }
 .menu__block__dish:hover .menu__block__dish__price {
-  animation: price-slide 1s ease-in-out forwards;
+  right: 75px;
 }
 .menu__block__dish__description {
   position: relative;
@@ -360,6 +344,7 @@ body {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
+  transition: all 1s ease-in-out;
 }
 .menu__block__dish__check {
   width: 60px;
@@ -372,6 +357,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.7;
+  transition: all 1s ease-in-out;
 }
 .menu__block__dish__check i {
   color: #fff;
@@ -637,12 +624,12 @@ body {
   margin-left: 0.5rem;
   font-size: 1rem;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1100px) {
   .rest-card {
     width: 45%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   .rest-card {
     width: 22%;
   }

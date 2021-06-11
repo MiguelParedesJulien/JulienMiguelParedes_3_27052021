@@ -108,14 +108,14 @@
                animation: description-hidden 1s ease-in-out forwards;
             }
             & > .menu__block__dish__check {
-               opacity: 0.7;
-               animation: check-slide 1s ease-in-out forwards;
+               opacity: 1;
+               right: 0px;
             }
             & .menu__block__dish__check i {
                animation: rotate 1s ease-in-out forwards;
             }
             & .menu__block__dish__price {
-               animation: price-slide 1s ease-in-out forwards;
+               right: 75px;
             }
          }
          &__description {
@@ -137,6 +137,7 @@
             font-weight: bold;
             display: flex;
             align-items: flex-end;
+            transition: all 1s ease-in-out;
          }
          &__check {
             width: 60px;
@@ -149,6 +150,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            opacity: 0.7;
+            transition: all 1s ease-in-out;
             & i {
                color: #fff;
                font-size: 25px;
